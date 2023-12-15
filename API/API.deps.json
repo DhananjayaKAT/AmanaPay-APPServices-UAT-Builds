@@ -9,12 +9,32 @@
       "API/1.0.0": {
         "dependencies": {
           "APay": "1.0.0",
+          "AWSSDK.S3": "3.7.304.6",
           "ApplicationCore": "1.0.0",
           "Logger(.NET)": "1.0.0",
           "Swashbuckle.AspNetCore": "6.5.0"
         },
         "runtime": {
           "API.dll": {}
+        }
+      },
+      "AWSSDK.Core/3.7.300.17": {
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.Core.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.300.17"
+          }
+        }
+      },
+      "AWSSDK.S3/3.7.304.6": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.300.17"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.S3.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.304.6"
+          }
         }
       },
       "Innofactor.EfCoreJsonValueConverter/6.0.0": {
@@ -830,6 +850,7 @@
       "System.Threading.Tasks.Extensions/4.5.4": {},
       "APay/1.0.0": {
         "dependencies": {
+          "AWSSDK.S3": "3.7.304.6",
           "ApplicationCore": "1.0.0",
           "DirectPay": "1.0.0",
           "EChannelling": "1.0.0",
@@ -847,6 +868,7 @@
       },
       "ApplicationCore/1.0.0": {
         "dependencies": {
+          "AWSSDK.S3": "3.7.304.6",
           "Innofactor.EfCoreJsonValueConverter": "6.0.0",
           "Logger(.NET)": "1.0.0",
           "Microsoft.AspNetCore.Hosting": "2.1.1",
@@ -865,6 +887,7 @@
       },
       "DirectPay/1.0.0": {
         "dependencies": {
+          "AWSSDK.S3": "3.7.304.6",
           "Logger(.NET)": "1.0.0",
           "Newtonsoft.Json": "13.0.3"
         },
@@ -874,6 +897,7 @@
       },
       "EChannelling/1.0.0": {
         "dependencies": {
+          "AWSSDK.S3": "3.7.304.6",
           "Logger(.NET)": "1.0.0",
           "Newtonsoft.Json": "13.0.3"
         },
@@ -883,6 +907,7 @@
       },
       "Email/1.0.0": {
         "dependencies": {
+          "AWSSDK.S3": "3.7.304.6",
           "NETCore.MailKit": "2.1.0",
           "Newtonsoft.Json": "13.0.3"
         },
@@ -897,6 +922,7 @@
       },
       "SMS/1.0.0": {
         "dependencies": {
+          "AWSSDK.S3": "3.7.304.6",
           "ApplicationCore": "1.0.0",
           "Logger(.NET)": "1.0.0",
           "Newtonsoft.Json": "13.0.3"
@@ -907,6 +933,7 @@
       },
       "Thyaga/1.0.0": {
         "dependencies": {
+          "AWSSDK.S3": "3.7.304.6",
           "Logger(.NET)": "1.0.0",
           "Newtonsoft.Json": "13.0.3"
         },
@@ -921,6 +948,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AWSSDK.Core/3.7.300.17": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zGGScoIQKwTpA4WqoP8Hfj5PlHPYq1JF8UhSY+uUDgaVSKslEYXBnfq/J2LQRorL7lEFDLmmt1lktkNIhmzHzA==",
+      "path": "awssdk.core/3.7.300.17",
+      "hashPath": "awssdk.core.3.7.300.17.nupkg.sha512"
+    },
+    "AWSSDK.S3/3.7.304.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sRNkIqJs4okR55QzIwFEpXP4YRXBc5nCr54+Gdhjp4hLQgT1gcOLJ7kgjaZBY2VO3WQ3GSC4ITeClzEPIrVfcg==",
+      "path": "awssdk.s3/3.7.304.6",
+      "hashPath": "awssdk.s3.3.7.304.6.nupkg.sha512"
     },
     "Innofactor.EfCoreJsonValueConverter/6.0.0": {
       "type": "package",
